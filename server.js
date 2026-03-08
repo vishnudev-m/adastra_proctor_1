@@ -129,7 +129,7 @@ app.post("/submit-exam", async (req, res) => {
             return res.status(403).json({ message: "Exam already submitted." });
         }
 
-        const examDuration = 40 * 60 * 1000;
+        const examDuration = 20 * 60 * 1000;
         const currentTime = new Date();
         const timeElapsed = currentTime - candidate.startTime;
 
